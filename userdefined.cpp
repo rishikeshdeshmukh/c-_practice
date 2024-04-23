@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+using namespace std;
 
 class UserString {
 private:
@@ -51,15 +52,15 @@ public:
 
 int main() {
     UserString str1("Hello");
-    std::cout << "String 1: " << str1.getString() << std::endl;
-    std::cout << "Length of String 1: " << str1.getLength() << std::endl;
+    cout << "String 1: " << str1.getString() << std::endl;
+    cout << "Length of String 1: " << str1.getLength() << std::endl;
 
     UserString str2 = str1; // Copy constructor
-    std::cout << "String 2 (copy of String 1): " << str2.getString() << std::endl;
+    cout << "String 2 (copy of String 1): " << str2.getString() << std::endl;
 
     UserString str3;
     str3 = str1; // Assignment operator
-    std::cout << "String 3 (assigned from String 1): " << str3.getString() << std::endl;
+    cout << "String 3 (assigned from String 1): " << str3.getString() << std::endl;
 
     return 0;
 }

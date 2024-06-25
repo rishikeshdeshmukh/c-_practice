@@ -11,6 +11,9 @@ int main(){
         cin>>arr[k][p];
        }
     }
+
+
+
 //hshs
     for(int i = 0 ; i < 3 ; i++ ){
         
